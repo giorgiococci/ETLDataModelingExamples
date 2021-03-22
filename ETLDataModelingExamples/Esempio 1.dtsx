@@ -11,21 +11,11 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Lesson 1"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{97AECBE5-6225-4980-BDCB-A5F43B4D42FF}">
+  DTS:VersionBuild="36"
+  DTS:VersionGUID="{722A573A-1503-4BA3-A806-2738A8BD6CF8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[(local).AdventureWorksDW]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{A458ADDF-981B-4567-8B31-2CB0CA2F963C}"
-      DTS:ObjectName="(local).AdventureWorksDW">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=CWJ9HGN53\SQL2019;Initial Catalog=AdventureWorksDW2017;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Sample Flat File Source Data]"
       DTS:CreationName="FLATFILE"
@@ -332,8 +322,8 @@ where [refTable].[CurrencyAlternateKey] = ?</property>
               <connections>
                 <connection
                   refId="Package\Extract Sample Currency Data\Lookup CurrencyKey.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[(local).AdventureWorksDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[(local).AdventureWorksDW]"
+                  connectionManagerID="{A458ADDF-981B-4567-8B31-2CB0CA2F963C}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[(local).AdventureWorksDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -441,8 +431,8 @@ where [refTable].[CurrencyAlternateKey] = ?</property>
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimDate] as refTable
- where [refTable].[FullDateAlternateKey] = ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimDate]) [refTable]
+where [refTable].[FullDateAlternateKey] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the cache type of the lookup table."
@@ -491,8 +481,8 @@ where [refTable].[CurrencyAlternateKey] = ?</property>
               <connections>
                 <connection
                   refId="Package\Extract Sample Currency Data\Lookup DateKey.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[(local).AdventureWorksDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[(local).AdventureWorksDW]"
+                  connectionManagerID="{A458ADDF-981B-4567-8B31-2CB0CA2F963C}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[(local).AdventureWorksDW]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -505,20 +495,16 @@ where [refTable].[CurrencyAlternateKey] = ?</property>
                       refId="Package\Extract Sample Currency Data\Lookup DateKey.Inputs[Lookup Input].Columns[CurrencyDate]"
                       cachedDataType="dbDate"
                       cachedName="CurrencyDate"
-                      errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Extract Sample Currency Data\Extract Sample Currency Data.Outputs[Flat File Source Output].Columns[CurrencyDate]"
-                      name="CurrencyDate"
-                      truncationRowDisposition="FailComponent"
-                      usageType="readWrite">
+                      lineageId="Package\Extract Sample Currency Data\Extract Sample Currency Data.Outputs[Flat File Source Output].Columns[CurrencyDate]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table that a column joins."
                           name="JoinToReferenceColumn">FullDateAlternateKey</property>
                         <property
-                          dataType="System.String"
+                          dataType="System.Null"
                           description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">FullDateAlternateKey</property>
+                          name="CopyFromReferenceColumn" />
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -642,8 +628,8 @@ where [refTable].[CurrencyAlternateKey] = ?</property>
               <connections>
                 <connection
                   refId="Package\Extract Sample Currency Data\Sample OLE  DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[(local).AdventureWorksDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[(local).AdventureWorksDW]"
+                  connectionManagerID="{A458ADDF-981B-4567-8B31-2CB0CA2F963C}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[(local).AdventureWorksDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -781,13 +767,13 @@ where [refTable].[CurrencyAlternateKey] = ?</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="227,42"
-          Id="Package\Extract Sample Currency Data"
-          TopLeft="454.5,263.5" />
-        <NodeLayout
           Size="128,42"
           Id="Package\Clean env"
           TopLeft="502,113" />
+        <NodeLayout
+          Size="227,42"
+          Id="Package\Extract Sample Currency Data"
+          TopLeft="454.5,263.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="567,155">
@@ -823,17 +809,41 @@ where [refTable].[CurrencyAlternateKey] = ?</property>
           Id="Package\Extract Sample Currency Data\Lookup DateKey"
           TopLeft="472.5,367.27358490566" />
         <NodeLayout
-          Size="175,65"
-          Id="Package\Extract Sample Currency Data\Lookup CurrencyKey"
-          TopLeft="466.5,268.38679245283" />
-        <NodeLayout
           Size="159,68"
           Id="Package\Extract Sample Currency Data\Sample OLE  DB Destination"
           TopLeft="470.5,469.141509433962" />
         <NodeLayout
+          Size="175,65"
+          Id="Package\Extract Sample Currency Data\Lookup CurrencyKey"
+          TopLeft="466.5,268.38679245283" />
+        <NodeLayout
           Size="176,68"
           Id="Package\Extract Sample Currency Data\Extract Sample Currency Data"
           TopLeft="463.5,163.5" />
+        <EdgeLayout
+          Id="Package\Extract Sample Currency Data.Paths[Lookup Output1]"
+          TopLeft="551.25,434.27358490566">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.8679245283019"
+              Start="0,0"
+              End="0,27.3679245283019">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.3679245283019" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,7.87927476415095,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Extract Sample Currency Data.Paths[Lookup Output]"
           TopLeft="553.25,333.38679245283">
@@ -880,30 +890,6 @@ where [refTable].[CurrencyAlternateKey] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Extract Sample Currency Data.Paths[Lookup Output1]"
-          TopLeft="551.25,434.27358490566">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34.8679245283019"
-              Start="0,0"
-              End="0,27.3679245283019">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.3679245283019" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,7.87927476415095,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -926,7 +912,20 @@ where [refTable].[CurrencyAlternateKey] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q4:string">true</Value>
+          type="q4:boolean">false</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Sample Currency Data\Sample OLE  DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -950,19 +949,6 @@ where [refTable].[CurrencyAlternateKey] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Extract Sample Currency Data\Sample OLE  DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
