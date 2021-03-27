@@ -7,12 +7,12 @@
   DTS:CreatorName="GRUPPORETI\coccigi1"
   DTS:DTSID="{5B1BABD7-AC2D-4E01-A752-35B63EE9C89C}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.152"
+  DTS:LastModifiedProductVersion="15.0.2000.157"
   DTS:LocaleID="1040"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{67A05114-39F4-4F14-9893-ABA8256EDAFB}">
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{5DAD5FC2-9644-451A-A548-7CF45146442C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -79,7 +79,7 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:FileUsageType="1"
-          DTS:ConnectionString="C:\Users\coccigi1\OneDrive - Reti\Percorsi\BI ETL &amp; Data Modeling\2021\SSIS\repo\ETLDataModelingExamples\log\log_20212303.txt" />
+          DTS:ConnectionString="C:\Users\coccigi1\OneDrive - Reti\Percorsi\BI ETL &amp; Data Modeling\2021\SSIS\repo\ETLDataModelingExamples\log\log_20212603.txt" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -132,8 +132,6 @@
     <DTS:SelectedLogProviders>
       <DTS:SelectedLogProvider
         DTS:InstanceID="{8CFF25CB-DE49-4D35-BA6A-DBC10678D69E}" />
-      <DTS:SelectedLogProvider
-        DTS:InstanceID="{F558B739-3757-424A-B476-5EC2F2722ECC}" />
     </DTS:SelectedLogProviders>
   </DTS:LoggingOptions>
   <DTS:Executables>
@@ -149,7 +147,8 @@
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:LoggingOptions
-        DTS:FilterKind="0">
+        DTS:FilterKind="0"
+        DTS:LoggingMode="2">
         <DTS:Property
           DTS:DataType="8"
           DTS:Name="EventFilter">1,24,ExecuteSQLExecutingQuery</DTS:Property>
@@ -205,12 +204,8 @@
       </DTS:ForEachEnumerator>
       <DTS:Variables />
       <DTS:LoggingOptions
-        DTS:FilterKind="0">
-        <DTS:SelectedLogProviders>
-          <DTS:SelectedLogProvider
-            DTS:InstanceID="{8CFF25CB-DE49-4D35-BA6A-DBC10678D69E}" />
-        </DTS:SelectedLogProviders>
-      </DTS:LoggingOptions>
+        DTS:FilterKind="0"
+        DTS:LoggingMode="2" />
       <DTS:Executables>
         <DTS:Executable
           DTS:refId="Package\Foreach File in Folder\Data Flow 03"
@@ -227,7 +222,25 @@
             DTS:LoggingMode="1">
             <DTS:Property
               DTS:DataType="8"
-              DTS:Name="EventFilter">1,13,OnPostExecute</DTS:Property>
+              DTS:Name="EventFilter">2,7,OnError,13,OnPostExecute</DTS:Property>
+            <DTS:Property
+              DTS:EventName="OnError"
+              DTS:Name="ColumnFilter">
+              <DTS:Property
+                DTS:Name="Computer">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="Operator">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="SourceName">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="SourceID">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="ExecutionID">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="MessageText">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="DataBytes">-1</DTS:Property>
+            </DTS:Property>
             <DTS:Property
               DTS:EventName="OnPostExecute"
               DTS:Name="ColumnFilter">
