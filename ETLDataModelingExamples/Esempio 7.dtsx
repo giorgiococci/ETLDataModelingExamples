@@ -11,8 +11,8 @@
   DTS:LocaleID="1040"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{6AFE66CF-5CEA-4120-B5D5-14F314C1D1DA}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{55D3E56E-C226-441E-AF15-BECDF47C21B5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -883,13 +883,49 @@ where FirstName = ? and LastName = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="157,42"
-          Id="Package\Incremental Data Loading\OLE DB Source"
-          TopLeft="357,86" />
+          Size="177,42"
+          Id="Package\Incremental Data Loading\OLE DB Destination"
+          TopLeft="247,400" />
         <NodeLayout
           Size="115,42"
           Id="Package\Incremental Data Loading\Lookup"
           TopLeft="384,188" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Incremental Data Loading\OLE DB Source"
+          TopLeft="357,86" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Incremental Data Loading\OLE DB Command"
+          TopLeft="482,403" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Incremental Data Loading\Conditional Split"
+          TopLeft="366,276" />
+        <EdgeLayout
+          Id="Package\Incremental Data Loading.Paths[Lookup Match Output]"
+          TopLeft="443.5,230">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46"
+              Start="0,0"
+              End="0,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,13.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Incremental Data Loading.Paths[OLE DB Source Output]"
           TopLeft="438.5,128">
@@ -912,117 +948,94 @@ where FirstName = ? and LastName = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="159,42"
-          Id="Package\Incremental Data Loading\Conditional Split"
-          TopLeft="365,304" />
-        <EdgeLayout
-          Id="Package\Incremental Data Loading.Paths[Lookup Match Output]"
-          TopLeft="443,230">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,74"
-              Start="0,0"
-              End="0,66.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,66.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,27.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Incremental Data Loading\OLE DB Destination"
-          TopLeft="247,400" />
         <EdgeLayout
           Id="Package\Incremental Data Loading.Paths[INSERT]"
-          TopLeft="419.333333333333,346">
+          TopLeft="445.5,318">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-83.8333333333333,54"
+              EndConnector="-110,82"
               Start="0,0"
-              End="-83.8333333333333,46.5">
+              End="-110,74.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.9227895392279" />
+                    End="0,37" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.9227895392279"
-                    Point2="0,21.9227895392279"
-                    Point3="-4,21.9227895392279" />
+                    Point1="0,37"
+                    Point2="0,41"
+                    Point3="-4,41" />
                   <mssgle:LineSegment
-                    End="-79.8333333333333,21.9227895392279" />
+                    End="-106,41" />
                   <mssgle:CubicBezierSegment
-                    Point1="-79.8333333333333,21.9227895392279"
-                    Point2="-83.8333333333333,21.9227895392279"
-                    Point3="-83.8333333333333,25.9227895392279" />
+                    Point1="-106,41"
+                    Point2="-110,41"
+                    Point3="-110,45" />
                   <mssgle:LineSegment
-                    End="-83.8333333333333,46.5" />
+                    End="-110,74.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-59.5069791666667,26.9227895392279,35.180625,9.5341796875"
+              BoundingBox="-72.5903125,46,35.180625,9.5341796875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="173,42"
-          Id="Package\Incremental Data Loading\OLE DB Command"
-          TopLeft="482,403" />
         <EdgeLayout
           Id="Package\Incremental Data Loading.Paths[UPDATE]"
-          TopLeft="469.666666666667,346">
+          TopLeft="470.666666666667,318">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="98.8333333333334,57"
+              EndConnector="97.8333333333334,85"
               Start="0,0"
-              End="98.8333333333334,49.5">
+              End="97.8333333333334,77.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.1407222914072" />
+                    End="0,30.508094645081" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.1407222914072"
-                    Point2="0,23.1407222914072"
-                    Point3="4,23.1407222914072" />
+                    Point1="0,30.508094645081"
+                    Point2="0,34.508094645081"
+                    Point3="4,34.508094645081" />
                   <mssgle:LineSegment
-                    End="94.8333333333334,23.1407222914072" />
+                    End="93.8333333333334,34.508094645081" />
                   <mssgle:CubicBezierSegment
-                    Point1="94.8333333333334,23.1407222914072"
-                    Point2="98.8333333333334,23.1407222914072"
-                    Point3="98.8333333333334,27.1407222914072" />
+                    Point1="93.8333333333334,34.508094645081"
+                    Point2="97.8333333333334,34.508094645081"
+                    Point3="97.8333333333334,38.508094645081" />
                   <mssgle:LineSegment
-                    End="98.8333333333334,49.5" />
+                    End="97.8333333333334,77.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="21.9300651041667,28.1407222914072,54.973203125,16"
+              BoundingBox="21.4300651041667,39.508094645081,54.973203125,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Incremental Data Loading\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Incremental Data Loading\OLE DB Source">
     <Properties>
@@ -1042,7 +1055,7 @@ where FirstName = ? and LastName = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -1052,23 +1065,10 @@ where FirstName = ? and LastName = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Incremental Data Loading\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

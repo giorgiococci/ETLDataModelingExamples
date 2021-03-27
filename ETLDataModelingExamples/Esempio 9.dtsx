@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="CW2Y32V32"
   DTS:CreatorName="GRUPPORETI\coccigi1"
-  DTS:DTSID="{AA72562D-38C5-4B53-BE77-106F67ED8E5E}"
+  DTS:DTSID="{8CA4BE56-10C9-44B9-BDC4-4E99A26D0E96}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.157"
   DTS:LocaleID="1040"
   DTS:ObjectName="Esempio 4"
   DTS:PackageType="5"
-  DTS:VersionBuild="67"
-  DTS:VersionGUID="{7E9008CD-D6B8-47AB-9FC6-4E9394E576AA}">
+  DTS:VersionBuild="65"
+  DTS:VersionGUID="{60C1B5A6-8A74-4860-B562-E121AB317F68}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[CurrencyConnection]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{D45831BD-0359-4482-A402-AD11760D0537}"
+      DTS:DTSID="{B3B2278A-FD34-464B-B250-90603EFC3F23}"
       DTS:ObjectName="CurrencyConnection">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::varFileName]</DTS:PropertyExpression>
@@ -38,7 +38,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="AverageRate"
-              DTS:DTSID="{6967B682-9EA7-4B02-9892-0B448038726F}"
+              DTS:DTSID="{378CE11C-D11B-49EE-8F7A-B8677A65B8E8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -47,7 +47,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CurrencyID"
-              DTS:DTSID="{288D2258-E6B3-4F1C-B66A-B255AC335117}"
+              DTS:DTSID="{578F7D68-E15B-4D26-9B9B-DCDBD226F181}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -55,7 +55,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="CurrencyDate"
-              DTS:DTSID="{6EEC57F0-FAD0-46BE-A87F-86247E27E54B}"
+              DTS:DTSID="{7D5926A8-5BFE-453C-9391-DB2341D49639}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -63,7 +63,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="EndOfDayRate"
-              DTS:DTSID="{A4233FEA-27AB-4F0D-B77A-05CDF65E7DB2}"
+              DTS:DTSID="{1B1B9782-FE51-4FA2-9797-A0BEA9F1537F}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -72,7 +72,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[error.txt]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{A6F1E3D2-8203-440A-B08C-C68CB9AA6723}"
+      DTS:DTSID="{5F084383-DCC3-4642-AEE5-7022377F873A}"
       DTS:ObjectName="error.txt">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -90,7 +90,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="AverageRate"
-              DTS:DTSID="{8DD4ABCF-1AF4-439B-B748-0F63A996EF01}"
+              DTS:DTSID="{6F47A7D3-0E1A-4F46-BD28-A4AA7993D2C5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -99,7 +99,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CurrencyID"
-              DTS:DTSID="{C39B7D4F-D02A-4949-9AC6-D573C8B779E6}"
+              DTS:DTSID="{E4ADBCF6-9DF3-4ABE-B0BC-D136C47859DE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -107,7 +107,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="CurrencyDate"
-              DTS:DTSID="{C0580619-2D18-4098-A96D-D1E1B4FA8AC4}"
+              DTS:DTSID="{3423AEC4-6727-4571-AF98-CA2DD0C7E9BF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -115,7 +115,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="EndOfDayRate"
-              DTS:DTSID="{FD5D3843-5421-430D-BF16-DF5702F1AF97}"
+              DTS:DTSID="{77F1FC05-161D-4059-8E21-7526A4593EF0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -123,7 +123,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{05B2BC50-C9C4-45CA-8671-49093E755661}"
+              DTS:DTSID="{9748C68F-1E55-4913-8508-6B7C3B3C05F7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -131,7 +131,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{3034F92F-C092-4627-AAE5-DB05CF0B54F9}"
+              DTS:DTSID="{EC61E8E7-0FD4-4628-AA60-FF951AA60695}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -140,7 +140,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorDescription"
-              DTS:DTSID="{54032AC7-F939-476B-B335-1A59AB7FF397}"
+              DTS:DTSID="{7A26CB3C-DC2A-484C-95C5-13082DB71E8C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -149,7 +149,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[log.txt]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{BEDD2F85-C266-43CD-A44A-37B836D1C1FA}"
+      DTS:DTSID="{99A194C7-DF10-4677-AB80-45D96FD6F75C}"
       DTS:ObjectName="log.txt">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">"C:\\Users\\coccigi1\\OneDrive - Reti\\Percorsi\\BI ETL &amp; Data Modeling\\2021\\SSIS\\repo\\ETLDataModelingExamples\\log\\log_" + (DT_STR, 4, 1252) DATEPART("yy" , GETDATE()) + RIGHT("0" + (DT_STR, 2, 1252) DATEPART("dd" , GETDATE()), 2) + RIGHT("0" + (DT_STR, 2, 1252) DATEPART("mm" , GETDATE()), 2) + ".txt"</DTS:PropertyExpression>
@@ -165,7 +165,7 @@
       DTS:ConfigString="(local).AdventureWorksDW"
       DTS:CreationName="Microsoft.LogProviderSQLServer"
       DTS:Description="Writes log entries for events to a SQL Server database"
-      DTS:DTSID="{2E1BEDA0-BF3A-4BEE-AD72-796441B05DAF}"
+      DTS:DTSID="{05701177-834D-4F23-8AFB-DDD2EB8CE58F}"
       DTS:ObjectName="SSIS log provider for SQL Server">
       <DTS:ObjectData>
         <InnerObject />
@@ -175,17 +175,29 @@
       DTS:ConfigString="log.txt"
       DTS:CreationName="Microsoft.LogProviderTextFile"
       DTS:Description="Writes log entries for events to a CSV file"
-      DTS:DTSID="{A00255A4-1940-4352-9E83-0DD47D2AEB31}"
+      DTS:DTSID="{843625F8-0E6B-4D23-BAA5-1CA87287712C}"
       DTS:ObjectName="SSIS log provider for Text files">
       <DTS:ObjectData>
         <InnerObject />
       </DTS:ObjectData>
     </DTS:LogProvider>
   </DTS:LogProviders>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{7A825DF2-D111-46F8-8E42-E335AA030808}"
+      DTS:ObjectName="folderName"
+      DTS:Required="True">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">C:\Users\coccigi1\OneDrive - Reti\Percorsi\BI ETL &amp; Data Modeling\2021\SSIS\repo\ETLDataModelingExamples\data\exempio 5</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{30244F60-BDA2-44FD-90BA-A9CA0733C2CC}"
+      DTS:DTSID="{B64E4938-6810-406E-A3DD-4E4CB5E87413}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[System::ErrorDescription]"
       DTS:IncludeInDebugDump="2345"
@@ -197,7 +209,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{BEAA1B08-E6B2-44AD-B989-E640C94D8015}"
+      DTS:DTSID="{8ED63D0E-628D-429E-8CEF-031AD99D2D87}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="idRun">
@@ -207,7 +219,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{56E4AB98-337A-42B9-8752-391456607865}"
+      DTS:DTSID="{26B5170F-E6FF-4BFC-A7D7-FE77FC599B25}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varFileName">
@@ -221,9 +233,9 @@
     DTS:LoggingMode="2">
     <DTS:SelectedLogProviders>
       <DTS:SelectedLogProvider
-        DTS:InstanceID="{2E1BEDA0-BF3A-4BEE-AD72-796441B05DAF}" />
+        DTS:InstanceID="{05701177-834D-4F23-8AFB-DDD2EB8CE58F}" />
       <DTS:SelectedLogProvider
-        DTS:InstanceID="{A00255A4-1940-4352-9E83-0DD47D2AEB31}" />
+        DTS:InstanceID="{843625F8-0E6B-4D23-BAA5-1CA87287712C}" />
     </DTS:SelectedLogProviders>
   </DTS:LoggingOptions>
   <DTS:Executables>
@@ -231,7 +243,7 @@
       DTS:refId="Package\Clean env"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{2ABC7BCB-807C-4F4E-AC14-09FC96E10501}"
+      DTS:DTSID="{4523F1CD-B7C9-4E75-8048-478829F5C72C}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Clean env"
@@ -272,18 +284,20 @@
       DTS:refId="Package\Foreach File in Folder"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
-      DTS:DTSID="{370BE8A3-74E6-45F4-AA2C-1644F97E914B}"
+      DTS:DTSID="{A82CE30F-71AD-4437-9D34-60F7D6B4EE80}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
       DTS:ObjectName="Foreach File in Folder">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
-        DTS:DTSID="{9148676C-ED8C-4DA6-85EA-2B790CDCDAB3}"
-        DTS:ObjectName="{9148676C-ED8C-4DA6-85EA-2B790CDCDAB3}">
+        DTS:DTSID="{89548F30-A309-4AA9-BD34-2705067E4EE9}"
+        DTS:ObjectName="{89548F30-A309-4AA9-BD34-2705067E4EE9}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[$Package::folderName]</DTS:PropertyExpression>
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\Users\coccigi1\OneDrive - Reti\Percorsi\BI ETL &amp; Data Modeling\2021\SSIS\repo\ETLDataModelingExamples\data\exempio 4" />
+              Folder="C:\Users\coccigi1\OneDrive - Reti\Percorsi\BI ETL &amp; Data Modeling\2021\SSIS\repo\ETLDataModelingExamples\data\exempio 5" />
             <FEFEProperty
               FileSpec="Currency_*.*" />
             <FEFEProperty
@@ -298,7 +312,7 @@
         DTS:FilterKind="0">
         <DTS:SelectedLogProviders>
           <DTS:SelectedLogProvider
-            DTS:InstanceID="{2E1BEDA0-BF3A-4BEE-AD72-796441B05DAF}" />
+            DTS:InstanceID="{05701177-834D-4F23-8AFB-DDD2EB8CE58F}" />
         </DTS:SelectedLogProviders>
       </DTS:LoggingOptions>
       <DTS:Executables>
@@ -306,7 +320,7 @@
           DTS:refId="Package\Foreach File in Folder\Data Flow 03"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{9396E798-DA52-4B4B-A874-A80837DD5F91}"
+          DTS:DTSID="{F2357282-4244-404C-82B2-ABE35C8B2747}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Data Flow 03"
@@ -392,14 +406,14 @@
             </DTS:Property>
             <DTS:SelectedLogProviders>
               <DTS:SelectedLogProvider
-                DTS:InstanceID="{2E1BEDA0-BF3A-4BEE-AD72-796441B05DAF}" />
+                DTS:InstanceID="{05701177-834D-4F23-8AFB-DDD2EB8CE58F}" />
             </DTS:SelectedLogProviders>
           </DTS:LoggingOptions>
           <DTS:EventHandlers>
             <DTS:EventHandler
               DTS:refId="Package\Foreach File in Folder\Data Flow 03.EventHandlers[OnError]"
               DTS:CreationName="OnError"
-              DTS:DTSID="{93892216-4BCB-4817-8E48-0ECD7568341E}"
+              DTS:DTSID="{E657DCE8-8554-4E6D-84FF-D122B7502CC3}"
               DTS:EventID="3670066"
               DTS:EventName="OnError"
               DTS:LocaleID="-1">
@@ -407,7 +421,7 @@
                 <DTS:Variable
                   DTS:CreationName=""
                   DTS:Description="The propagate property of the event"
-                  DTS:DTSID="{8BC945BD-A509-443D-AABD-D97EA3144507}"
+                  DTS:DTSID="{958FF7D4-2010-4D2D-AC68-1B0FCF411FCB}"
                   DTS:IncludeInDebugDump="6789"
                   DTS:Namespace="System"
                   DTS:ObjectName="Propagate">
@@ -420,7 +434,7 @@
                   DTS:refId="Package\Foreach File in Folder\Data Flow 03.EventHandlers[OnError]\Update Log with Error"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Execute SQL Task"
-                  DTS:DTSID="{e3b33458-15f0-4ad8-8d19-66c6167ea762}"
+                  DTS:DTSID="{53871708-0450-4182-89CB-0D741C3FA863}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Update Log with Error"
@@ -534,7 +548,7 @@
                         <inputColumn
                           refId="Package\Foreach File in Folder\Data Flow 03\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorDescription]"
                           cachedDataType="wstr"
-                          cachedLength="500"
+                          cachedLength="50"
                           cachedName="ErrorDescription"
                           externalMetadataColumnId="Package\Foreach File in Folder\Data Flow 03\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorDescription]"
                           lineageId="Package\Foreach File in Folder\Data Flow 03\Script Component.Outputs[Output 0].Columns[ErrorDescription]" />
@@ -1749,7 +1763,7 @@ public class Input0Buffer: ScriptBuffer
     <msb:CodeName>SC_c8a05989ae1547dc88a52272b224793e</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_c8a05989ae1547dc88a52272b224793e</msb:DisplayName>
-    <msb:ProjectId>{753EA729-1F4D-4540-BD44-F4F06E0DEDED}</msb:ProjectId>
+    <msb:ProjectId>{5A8F8FB5-621D-49E6-8304-44F115FD1FEE}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_c8a05989ae1547dc88a52272b224793e.csproj" />
@@ -1895,7 +1909,7 @@ namespace SC_c8a05989ae1547dc88a52272b224793e.Properties {
                         <arrayElement
                           dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAPTuXmAAAAAAAAAAAOAAIiALATAAABQAAAAIAAAAAAAAdjIA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAIXKXWAAAAAAAAAAAOAAIiALATAAABQAAAAIAAAAAAAAdjIA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAACQyAABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1972,7 +1986,7 @@ bgBuAG8AdAAgAGIAZQAgAHMAZQB0ACAAdABvACAARgBhAGwAcwBlAC4AIABBAHMAcwBpAGcAbgAg
 AGEAIAB2AGEAbAB1AGUAIAB0AG8AIAB0AGgAZQAgAGMAbwBsAHUAbQBuACAAaQBuAHMAdABlAGEA
 ZAAuAAAPSQBuAHAAdQB0ACAAMAAAcVMAQwBfAGMAOABhADAANQA5ADgAOQBhAGUAMQA1ADQANwBk
 AGMAOAA4AGEANQAyADIANwAyAGIAMgAyADQANwA5ADMAZQAuAFAAcgBvAHAAZQByAHQAaQBlAHMA
-LgBSAGUAcwBvAHUAcgBjAGUAcwAAUva1G8RWxUeOVxJdGjnsxgAEIAEBCAMgAAEFIAEBEREEIAEB
+LgBSAGUAcwBvAHUAcgBjAGUAcwAAOJU0BmLZp0u4bgQ5B/t2mwAEIAEBCAMgAAEFIAEBEREEIAEB
 DgUgAQERWQQgABJpBCABDggJIAMBEj0dCBJBAwYSPQMGHQgEIAEICAQgAQIIBSACAQgcAyAAAgYg
 AgIOEXUFIAEdCAgGAAESeRF9BSAAEoCBByACAQ4SgIEIt3pcVhk04IkIiYRdzYCAzJEDBhIUAwYS
 GAMGEkUDBhJRAwYSVQMGEiAFIAEBEgwDIAAIBCABAQIJIAQBCA4SPRJBBSABARJFBAAAElEEAAAS
@@ -2092,7 +2106,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                         <outputColumn
                           refId="Package\Foreach File in Folder\Data Flow 03\Script Component.Outputs[Output 0].Columns[ErrorDescription]"
                           dataType="wstr"
-                          length="500"
+                          length="50"
                           lineageId="Package\Foreach File in Folder\Data Flow 03\Script Component.Outputs[Output 0].Columns[ErrorDescription]"
                           name="ErrorDescription" />
                       </outputColumns>
@@ -2135,7 +2149,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:refId="Package\Foreach File in Folder\Insert Log"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{8063D1F5-1511-48D8-9381-DB6E684AC119}"
+          DTS:DTSID="{974A56E2-7793-43C1-AE5C-40CB40C5DEE1}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Insert Log"
@@ -2165,7 +2179,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:refId="Package\Foreach File in Folder\Update Log"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{0F9CA590-EF75-40C2-9B99-5B6581239B17}"
+          DTS:DTSID="{3C56971F-A57D-440F-AFF1-EB320E6D3307}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Update Log"
@@ -2196,7 +2210,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Foreach File in Folder.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{DA5A4A39-A742-40B8-ACFB-9E79E2864C4D}"
+          DTS:DTSID="{5CFE289D-1868-45CD-B515-1DA2AA3BA1A4}"
           DTS:From="Package\Foreach File in Folder\Insert Log"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -2204,7 +2218,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Foreach File in Folder.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{25AAA24B-F156-4AF9-AABA-62BA292882D5}"
+          DTS:DTSID="{DA4A1E9C-8382-426A-8BCD-973D8AFB4D3D}"
           DTS:From="Package\Foreach File in Folder\Data Flow 03"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
@@ -2213,8 +2227,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{3CC49B3F-E166-4886-96F1-98B17A757083}"
-          DTS:ObjectName="{3CC49B3F-E166-4886-96F1-98B17A757083}"
+          DTS:DTSID="{6D9D1BFA-EF12-4223-9CED-B9D8CA40B803}"
+          DTS:ObjectName="{6D9D1BFA-EF12-4223-9CED-B9D8CA40B803}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::varFileName" />
       </DTS:ForEachVariableMappings>
@@ -2223,7 +2237,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       DTS:refId="Package\Generate RunId"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{DDCE9CA3-5697-4E91-AB7B-E51E8B518F5A}"
+      DTS:DTSID="{8A0619CC-3C8A-440C-8B00-80B5751A8ECC}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Generate RunId"
@@ -2252,7 +2266,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{2C8258DD-6287-44CA-AEBD-8CEDE938FFAD}"
+      DTS:DTSID="{CB5F47B9-B4D9-4568-B7F6-F2CC265753AC}"
       DTS:From="Package\Clean env"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -2260,7 +2274,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{D0F21E62-E47E-43B7-B7B7-94C4F6D774EA}"
+      DTS:DTSID="{D224F031-08E7-4384-9D28-6C1DCF8BA561}"
       DTS:From="Package\Generate RunId"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -2281,7 +2295,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         <NodeLayout
           Size="128,42"
           Id="Package\Clean env"
-          TopLeft="431,76" />
+          TopLeft="423,75" />
         <NodeLayout
           Size="141,42"
           Id="Package\Foreach File in Folder\Data Flow 03"
@@ -2344,25 +2358,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           PanelSize="274,289"
           Size="274,332"
           Id="Package\Foreach File in Folder"
-          TopLeft="363,226" />
+          TopLeft="360,257" />
         <NodeLayout
           Size="157,42"
           Id="Package\Generate RunId"
-          TopLeft="415,148" />
+          TopLeft="411,151" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="494.25,118">
+          TopLeft="488.25,117">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,30"
+              EndConnector="0,34"
               Start="0,0"
-              End="0,22.5">
+              End="0,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.5" />
+                    End="0,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2373,18 +2387,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="496.75,190">
+          TopLeft="493.25,193">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,36"
+              EndConnector="0,64"
               Start="0,0"
-              End="0,28.5">
+              End="0,56.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.5" />
+                    End="0,56.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2393,6 +2407,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="Parametrize Connection String"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="189,60"
+          Id="d1c8ca0b-1738-4b91-a3e1-00fc669e24d4"
+          TopLeft="121,110" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -2416,7 +2437,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         <NodeLayout
           Size="138,42"
           Id="Package\Foreach File in Folder\Data Flow 03\Lookup Date"
-          TopLeft="523,316" />
+          TopLeft="523,318" />
         <NodeLayout
           Size="167,42"
           Id="Package\Foreach File in Folder\Data Flow 03\Script Component"
@@ -2445,31 +2466,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-8,30.75,16,16"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Foreach File in Folder\Data Flow 03.Paths[Lookup Match Output1]"
-          TopLeft="594.25,358">
+          TopLeft="594.25,360">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,63"
+              EndConnector="0,61"
               Start="0,0"
-              End="0,55.5">
+              End="0,53.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.5" />
+                    End="0,53.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,21.9453125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,20.9453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2479,21 +2500,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46"
+              EndConnector="0,48"
               Start="0,0"
-              End="0,38.5">
+              End="0,40.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.5" />
+                    End="0,40.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,13.4453125,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,14.4453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2552,7 +2573,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2566,7 +2589,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         <NodeLayout
           Size="186,42"
           Id="Package\Foreach File in Folder\Data Flow 03.EventHandlers[OnError]\Update Log with Error"
-          TopLeft="442,167" />
+          TopLeft="644,127" />
       </GraphLayout>
     </LayoutInfo>
   </DtsEventHandler>
